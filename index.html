@@ -42,9 +42,9 @@
       #spinner {
         display: none;
       }
+    
     </style>
 
-    
     <title>Free Online QR Code Generator</title>
   </head>
   <body>
@@ -61,7 +61,7 @@
         <div class="w-full md:w-2/3 mr-24">
           <h1 class="text-3xl font-bold mb-5 md:text-4xl">QR Code Generator</h1>
           <p class="mb-4">
-            QR Codes allow smartphone users to access your website simply and
+            QR Codes allow smartphone users to access your website easly and
             quickly.
           </p>
           <p>
@@ -82,9 +82,10 @@
               name="size"
               id="size"
             >
-              <option value="50" selected>50x50</option>
+              <option value="50">20x20</option>
+              <option value="50">50x50</option>
               <option value="100">100x100</option>
-              <option value="200">200x200</option>
+              <option value="200" selected>200x200</option>
               <option value="300">300x300</option>
               <option value="400">400x400</option>
               <option value="500">500x500</option>
@@ -92,7 +93,7 @@
               <option value="700">700x700</option>
             </select>
             <button
-              class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-red-900"
+              class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-red-500"
               type="submit"
             >
               Generate QR Code
@@ -135,5 +136,13 @@
         <div id="qrcode" class="m-auto"></div>
       </div>
     </main>
+
+    <!-- here is the footer an extra addition to the code -->
+    <footer class="bg-gray-900 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2023 website by Nouman Harry.</p>
+      </div>
+    </footer>
+    </footer>
   </body>
 </html>
